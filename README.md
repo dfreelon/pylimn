@@ -1,7 +1,5 @@
 # PyLimn
  
-A small Python module for NLP-based text description
-
 PyLimn implements a few NLP-type functions I've found useful in my own research. YMMV.
 
 ## System requirements
