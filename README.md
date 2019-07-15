@@ -1,6 +1,6 @@
 # PyLimn
  
-PyLimn implements a few NLP-type functions I've found useful in my own research. YMMV.
+PyLimn implements several NLP-type functions I've found useful in my own research. YMMV.
 
 ## System requirements
 
