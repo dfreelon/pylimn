@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pylimn
+Version: 1.0.1
+Summary: pylimn
+Home-page: https://github.com/dfreelon/pylimn/
+Author: Deen Freelon
+Author-email: dfreelon@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/dfreelon/pylimn/
+Description: UNKNOWN
+Keywords: natural language processing,nlp,named entity extraction,keyword in context,kwic,stemming
+Platform: UNKNOWN
