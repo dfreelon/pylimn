@@ -2,7 +2,7 @@ from setuptools import setup
 setup(
   name = 'pylimn',
   packages = ['pylimn'], # this must be the same as the name above
-  version = '1.0.1',
+  version = '1.0.2',
   description = 'pylimn',
   author = 'Deen Freelon',
   author_email = 'dfreelon@gmail.com',

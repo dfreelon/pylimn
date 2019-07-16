@@ -88,7 +88,7 @@ def snt_to_lower(snt):
     else:
         return snt[0].lower() + snt[1:]
 
-def rank_named_entities(news_series,
+def rank_named_entities(news_iterable,
                         min_entity_ct=5,
                         min_entity_len=4,
                         stop_words=stop_ne,
@@ -101,7 +101,7 @@ def rank_named_entities(news_series,
                         remove_news=True,
                         remove_i_s=True,
                         remove_geo=True):
-    news_split = news_series.tolist() #must be a Pandas series
+    news_split = list(news_iterable) #must be a Pandas series
     news_split = [re.sub('[^\w\s\.\?\!:,\(\-\)]',
                   ' ',
                   i.replace("'s","")) 
