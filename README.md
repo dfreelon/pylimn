@@ -22,7 +22,7 @@ PyLimn contains the following functions:
 
 ### rank_named_entities
 
-__Sample code:__
+__Sample code__
 
 ```python
 import pandas as pd
@@ -36,7 +36,7 @@ docs_ne = pyl.rank_named_entities(doc_list,
 print(docs_ne[:10]) #show top ten most frequently-occurring named entities
 ```
 
-__Parameters:__
+__Parameters__
 
 * ```news_iterable```: a list-like object containing strings (preferably news-article length ones)
 * ```min_entity_ct```: either 1) the minimum number of times a named entity can appear in a dataset, or 2) the minimum number of articles in which an entity can appear (which of these it is depends on the value of ```once_per_doc```). Default is 5.
@@ -52,12 +52,12 @@ __Parameters:__
 * ```remove_i_s```: Boolean indicating whether to remove free-standing capital letter I's. Default is ```True```.
 * ```remove_geo```: Boolean indicating whether to remove geographical information (as determined by [geostring](https://github.com/dfreelon/geostring)). Default is ```True```.
 
-__Output:__ a list of lists in which each sub-list contains the name of an entity and the number of times it appeared in the corpus. Entities are listed in descending order by count.
+__Output__ a list of lists in which each sub-list contains the name of an entity and the number of times it appeared in the corpus. Entities are listed in descending order by count.
 
 
 ### kwic
 
-__Sample code:__
+__Sample code__
 
 ```python
 huck = '''
@@ -76,7 +76,7 @@ print(huck_kwic)
 
 ### pairwise_stem
 
-__Sample code:__
+__Sample code__
 
 ```python
 t1 = 'nationalist'
@@ -87,7 +87,7 @@ print(nat_ps)
 
 ### pairwise_stem_all
 
-__Sample code:__
+__Sample code__
 
 ```python
 nat_list = ['nation','national','nationalism','nationalist','nationality']
@@ -97,7 +97,7 @@ print(nat_psa)
 
 ### get_context_terms
 
-__Sample code:__
+__Sample code__
 
 ```python
 #see above sample code for rank_named_entities to get the doc_list var
