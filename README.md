@@ -56,7 +56,7 @@ __Parameters__
 A list of lists in which each sub-list contains the name of an entity and the number of times it appeared in the corpus. Entities are listed in descending order by count.
 
 
-### kwic
+### ```kwic```
 
 __Sample code__
 
@@ -75,7 +75,7 @@ pyl.huck_kwic = kwic(huck,'Tom')
 print(huck_kwic)
 ```
 
-### pairwise_stem
+### ```pairwise_stem```
 
 __Sample code__
 
@@ -86,7 +86,7 @@ nat_ps = pyl.pairwise_stem(t1,t2)
 print(nat_ps)
 ```
 
-### pairwise_stem_all
+### ```pairwise_stem_all```
 
 __Sample code__
 
@@ -96,7 +96,7 @@ nat_psa = pyl.pairwise_stem_all(nat_list)
 print(nat_psa)
 ```
 
-### get_context_terms
+### ```get_context_terms```
 
 __Sample code__
 
