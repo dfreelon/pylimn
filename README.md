@@ -52,7 +52,8 @@ __Parameters__
 * ```remove_i_s```: Boolean indicating whether to remove free-standing capital letter I's. Default is ```True```.
 * ```remove_geo```: Boolean indicating whether to remove geographical information (as determined by [geostring](https://github.com/dfreelon/geostring)). Default is ```True```.
 
-__Output__ a list of lists in which each sub-list contains the name of an entity and the number of times it appeared in the corpus. Entities are listed in descending order by count.
+#### Output 
+A list of lists in which each sub-list contains the name of an entity and the number of times it appeared in the corpus. Entities are listed in descending order by count.
 
 
 ### kwic
