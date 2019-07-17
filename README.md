@@ -22,7 +22,7 @@ PyLimn contains the following functions:
 
 ### rank_named_entities
 
-Sample code:
+__Sample code:__
 
 ```python
 import pandas as pd
@@ -35,9 +35,29 @@ docs_ne = pyl.rank_named_entities(doc_list,
                                   min_entity_len=5) #adjust numbers based on the size of your corpus
 print(docs_ne[:10]) #show top ten most frequently-occurring named entities
 ```
+
+__Parameters:__
+
+* ```news_iterable```: a list-like object containing strings (preferably news-article length ones)
+* ```min_entity_ct```: either 1) the minimum number of times a named entity can appear in a dataset, or 2) the minimum number of articles in which an entity can appear (which of these it is depends on the value of ```once_per_doc```). Default is 5.
+* ```min_entity_len```: the minimum character length for a named entity. Default is 4.
+* ```stop_words```: a list-like objects of words to exclude from the analysis
+* ```include_first_words```: Boolean indicating whether the first words of sentences should be included in the analysis. Default is ```False```.
+* ```remove_upper_terms```: Boolean indicating whether terms in all caps should be removed. Default is ```False```.
+* ```find_hyphenated```: Boolean indicating whether terms containing hyphens that may not necessarily have their first character capitalized should be included. Default is ```True```.
+* ```once_per_doc```: Boolean indicating whether terms should be counted once per document or the total number of times they appear across all documents. Default is ```True```.
+* ```remove_dates```: Boolean indicating whether to remove date-related information. Default is ```True```.
+* ```remove_digits```: Boolean indicating whether to remove digits. Default is ```True```.
+* ```remove_news```: Boolean indicating whether to remove the names of well-known news organizations. Default is ```True```.
+* ```remove_i_s```: Boolean indicating whether to remove free-standing capital letter I's. Default is ```True```.
+* ```remove_geo```: Boolean indicating whether to remove geographical information (as determined by [geostring](https://github.com/dfreelon/geostring)). Default is ```True```.
+
+__Output:__ a list of lists in which each sub-list contains the name of an entity and the number of times it appeared in the corpus. Entities are listed in descending order by count.
+
+
 ### kwic
 
-Sample code:
+__Sample code:__
 
 ```python
 huck = '''
@@ -56,7 +76,7 @@ print(huck_kwic)
 
 ### pairwise_stem
 
-Sample code:
+__Sample code:__
 
 ```python
 t1 = 'nationalist'
@@ -67,7 +87,7 @@ print(nat_ps)
 
 ### pairwise_stem_all
 
-Sample code:
+__Sample code:__
 
 ```python
 nat_list = ['nation','national','nationalism','nationalist','nationality']
@@ -77,7 +97,7 @@ print(nat_psa)
 
 ### get_context_terms
 
-Sample code:
+__Sample code:__
 
 ```python
 #see above sample code for rank_named_entities to get the doc_list var
