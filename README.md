@@ -44,8 +44,8 @@ __Parameters__
 * ```stop_words```: a list-like objects of words to exclude from the analysis
 * ```include_first_words```: Boolean indicating whether the first words of sentences should be included in the analysis. Default is ```False```.
 * ```remove_upper_terms```: Boolean indicating whether terms in all caps should be removed. Default is ```False```.
-* ```find_hyphenated```: Boolean indicating whether terms containing hyphens that may not necessarily have their first character capitalized should be included. Default is ```True```.
-* ```once_per_doc```: Boolean indicating whether terms should be counted once per document or the total number of times they appear across all documents. Default is ```True```.
+* ```find_hyphenated```: Boolean indicating whether named entities containing hyphens that may not necessarily have their first character capitalized should be included. Default is ```True```.
+* ```once_per_doc```: Boolean indicating whether entities should be counted once per document or the total number of times they appear across all documents. Default is ```True```.
 * ```remove_dates```: Boolean indicating whether to remove date-related information. Default is ```True```.
 * ```remove_digits```: Boolean indicating whether to remove digits. Default is ```True```.
 * ```remove_news```: Boolean indicating whether to remove the names of well-known news organizations. Default is ```True```.
