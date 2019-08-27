@@ -71,7 +71,7 @@ Polly, or the widow, or maybe Mary.  Aunt Polly--Tom's Aunt Polly, she
 is--and Mary, and the Widow Douglas is all told about in that book, which
 is mostly a true book, with some stretchers, as I said before.
 ''' #from The Adventures of Huckleberry Finn, https://www.gutenberg.org/files/76/76-0.txt
-pyl.huck_kwic = kwic(huck,'Tom')
+huck_kwic = pyl.kwic(huck,'Tom')
 print(huck_kwic)
 ```
 
